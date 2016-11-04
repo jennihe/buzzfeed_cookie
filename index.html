@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+      $('.question1').click(function() {
+        var choice = $(this).data('value');
+        $('#question1-choice').val(choice);
+      });
+      $('.question2').click(function() {
+        var choice = $(this).data('value');
+        $('#question2-choice').val(choice);
+      });
+      $('.question3').click(function() {
+        var choice = $(this).data('value');
+        $('#question3-choice').val(choice);
+      });
+      $('.question4').click(function() {
+        var choice = $(this).data('value');
+        $('#question4-choice').val(choice);
+      });
+      $('.question5').click(function() {
+        var choice = $(this).data('value');
+        $('#question5-choice').val(choice);
+      });
+    });
+    </script>
+    <script src="myweb.js"></script>
+    <title>Buzzfeed Cookie Quiz</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+<header class="header">
+<h1 >Buzzfeed Cookie Quiz</h1>
+</header>
+
+
+
+
+<section class="container">
+  <h2>What does your Friday night look like?</h2>
+  <div>
+</div>
+</section>
+<section class="image_container">
+    <img class="question1" data-value="0" src="images/1a.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
+    <img class="question1" data-value="1" src="images/1b.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
+    <img class="question1" data-value="2" src="images/1c.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
+    <img class="question1" data-value="3" src="images/1d.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
+</section>
+
+<section class="question">
+  <h2>What is your ideal pet?</h2>
+</section>
+
+<section class="image_container">
+    <img class="question2" data-value="0" src="images/2a.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
+    <img class="question2" data-value="1" src="images/2b.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
+    <img class="question2" data-value="2" src="images/2c.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
+    <img class="question2" data-value="3" src="images/2d.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
+</section>
+
+<section class="question">
+  <h2>What's your next vacation?</h2>
+</section>
+
+<section class="image_container">
+    <img class="question3" data-value="0" src="images/3a.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
+    <img class="question3" data-value="1" src="images/3b.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
+    <img class="question3" data-value="2" src="images/3c.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
+    <img class="question3" data-value="3" src="images/3d.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
+</section>
+
+<section class="question">
+  <h2>What is your favorite hobby?</h2>
+</section>
+
+<section class="image_container">
+  <img class="question4" data-value="0" src="images/4a.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
+  <img class="question4" data-value="1" src="images/4b.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
+  <img class="question4" data-value="2" src="images/4c.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
+  <img class="question4" data-value="3" src="images/4d.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
+</section>
+
+<section class="question">
+  <h2>What is your ideal future home?</h2>
+</section>
+
+<section class="image_container">
+  <img class="question5" data-value="0" src="images/5a.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
+  <img class="question5" data-value="1" src="images/5b.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
+  <img class="question5" data-value="2" src="images/5c.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
+  <img class="question5" data-value="3" src="images/5d.jpg" alt="HTML5 Icon" style="width:128px;height:128px" >
+</section>
+
+
+
+<section class="button">
+  <form action="http://localhost:4567/cookie_submit" method = "POST">
+      <INPUT type="hidden" id="question1-choice" name="Question1">
+      <INPUT type="hidden" id="question2-choice" name="Question2">
+      <INPUT type="hidden" id="question3-choice" name="Question3">
+      <INPUT type="hidden" id="question4-choice" name="Question4">
+      <INPUT type="hidden" id="question5-choice" name="Question5">
+      <center><button id="calculate">What cookie are you?</button></center>
+  </form>
+
+
+</section>
+
+
+  </body>
+</html>
