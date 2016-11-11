@@ -7,27 +7,31 @@
     $(document).ready(function() {
       $('.question1').click(function() {
         var choice = $(this).data('value');
+        $(this).css({"border": "3px solid red"});
         $('#question1-choice').val(choice);
       });
       $('.question2').click(function() {
-        var choice = $(this).data('value');
+        var choice = $(this).data('value')
+        $(this).css({"border": "3px solid red"});
         $('#question2-choice').val(choice);
       });
       $('.question3').click(function() {
         var choice = $(this).data('value');
+        $(this).css({"border": "3px solid red"});
         $('#question3-choice').val(choice);
       });
       $('.question4').click(function() {
         var choice = $(this).data('value');
+        $(this).css({"border": "3px solid red"});
         $('#question4-choice').val(choice);
       });
       $('.question5').click(function() {
         var choice = $(this).data('value');
+        $(this).css({"border": "3px solid red"});
         $('#question5-choice').val(choice);
       });
     });
     </script>
-    <script src="myweb.js"></script>
     <title>Buzzfeed Cookie Quiz</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
@@ -98,7 +102,7 @@
 
 
 <section class="button">
-  <form action="http://localhost:4567/cookie_submit" method = "POST">
+  <form action="/cookie_submit" method="POST">
       <INPUT type="hidden" id="question1-choice" name="Question1">
       <INPUT type="hidden" id="question2-choice" name="Question2">
       <INPUT type="hidden" id="question3-choice" name="Question3">
